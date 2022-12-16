@@ -42,9 +42,9 @@ public class Reservation {
 		}
 
 		
-		public long duration() {               //CALCULAR A DURAÇÃO EM DIAS COM BASE NAS DIFERENÇASS DAS DUAS DATAS
-			long diff = checkOut.getTime() - checkIn.getTime();   // MOSTRA A DATA EM MILISEGUNDOS E DEPOIS CALCULA A DIFERENÇA EM MILISEGUNDOS E SALVA NA VARIAVEL DIFF
-			return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);   // CONVERTE MILISEGUNDDOS EM DIAS/DATA
+		public long duration() {               
+			long diff = checkOut.getTime() - checkIn.getTime();  
+			return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);   
 		}
 		
 		public void updateDates(Date checkIn, Date checkOut) {
